@@ -25,14 +25,14 @@ SELECT : going to boss corridor of the castle stage
 - Skip the capcom logo, stage intro, weapon get and castle cutscenes.
 - Waiting time after Mega Man's death is much shorter for faster restart.
 - Infinite lives and E-tanks.
-
+  
 ## Known issues
 - Mute BGM will reduce lags.  
-- Entering a teleporter (in the refights section), the game pauses for a bit for timer display.
-
+- Entering a teleporter (in the refights section), the game pauses for a bit for timer display.  
+  
 ## Credits
-I stole many asm techs from MM3-5 practice hacks to make this one.
-Huge thanks to following people for sharing very helpful info!
+I stole many asm techs from MM3-5 practice hacks to make this one.  
+Huge thanks to following people for sharing very helpful info!  
 - Pinkus for Mega Man 3 practice hack asm sources
 - Myriachan for Mega Man 4 practice hack asm sources
 - Feral for Mega Man 5 practice hack asm sources
