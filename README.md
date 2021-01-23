@@ -28,7 +28,7 @@ SELECT : going to boss corridor of the castle stage
 - Infinite lives and E-tanks.
   
 ## Known issues
-- Mute BGM reduces lags.  
+- Mute BGM reduces lags (not ideal for speedrun purpose).  
 - Entering a teleporter (in the refights section), the game pauses for a bit for timer display.  
   
 ## Credits
