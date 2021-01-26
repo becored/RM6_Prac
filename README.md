@@ -14,7 +14,6 @@ SELECT : going to boss corridor of the castle stage
 \* castle stages are correspondingly numbered from left to right, top to bottom  
 \* all stages are always available even after you beat any robot master or castle boss  
 \* fun: load the "revisit" color palette by pressing A/B + D-pad for Tomahawk, Yamato, Knight and Centaur stage  
-\* beta: mute BGM by pressing B on Mega Man icon (reducing lags, don't use this for individual room speedrun!)  
   
 - Loading a stage gives you the appropriate weapons with the "correct" amount of ammo (for speedrun purpose)  
 \* select the category (Any% or 100%) on the title screen  
@@ -23,12 +22,11 @@ SELECT : going to boss corridor of the castle stage
 \* first number is seconds (0-99), second number is frames (0-59). functionally same as MM3-5 practice hacks'  
   
 - In the robot master/castle stage, pressing SELECT will send you to the password screen and can return to the stage select or restart from the check point in the current stage.
-- Skip the capcom logo, stage intro, weapon get and castle cutscenes.
+- Skip the capcom logo, game intro, stage intro, weapon get and castle cutscenes.
 - Waiting time after Mega Man's death is much shorter for faster restart.
 - Infinite lives and E-tanks.
   
 ## Known issues
-- Mute BGM reduces lags (not ideal for speedrun purpose).  
 - Entering a teleporter (in the refights section), the game pauses for a bit for timer display.  
   
 ## Credits
