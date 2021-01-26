@@ -12,11 +12,11 @@
 	;$06C3：秒数タイルtmp(タイム表示用)
 
 	; オープニング処理スキップ
-	;BANKORG_D $3E0CC9		; PC:$7CCC9
-	;nop					; デフォルトはjsr $CB28
-	;nop					; デフォルトはdb $01
-	;nop
-	;nop
+	BANKORG_D $3E0CC9		; PC:$7CCC9
+	nop						; デフォルトはjsr $CB28
+	nop						; デフォルトはdb $01
+	nop
+	nop
 
 	; マッパーをMMC3→119に変更するためchr_ram_banksを修正
 	BANKORG_D $3F1F50		; PC:$7FF50
@@ -25,10 +25,6 @@
 	; CAPCOMロゴ処理スキップ
 	BANKORG_D $3E0CC3		; PC:$7CCC3
 	db $EA, $EA, $EA		; デフォルトはjsr $D048
-
-	; オープニングスキップ
-	BANKORG_D $3E0CC9		; PC:$7CCC9
-	db $EA, $EA, $EA, $EA	; デフォルトはjsr $CB28, .db $01
 
 	; タイトル画面(GAME START) パターンテーブル
 	BANKORG_D $3C0930		; PC:$78930
