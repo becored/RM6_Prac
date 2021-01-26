@@ -26,6 +26,10 @@
 	BANKORG_D $3E0CC3		; PC:$7CCC3
 	db $EA, $EA, $EA		; デフォルトはjsr $D048
 
+	; オープニングスキップ
+	BANKORG_D $3E0CC9		; PC:$7CCC9
+	db $EA, $EA, $EA, $EA	; デフォルトはjsr $CB28, .db $01
+
 	; タイトル画面(GAME START) パターンテーブル
 	BANKORG_D $3C0930		; PC:$78930
 	;デフォルト:A6 6C 85 A7 00 A8 A9 6C AA A9
