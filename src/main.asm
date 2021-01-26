@@ -839,8 +839,8 @@ CenterPressed:
 	and #$60				; SELECT or START
 	cmp #$20
 	beq CenterPressedSelect
-	cmp #$40
-	beq CenterPressedB
+	; cmp #$40
+	; beq CenterPressedB
 	rts
 CenterPressedB:
 	lda #$F0				; 消音
@@ -914,21 +914,21 @@ DrawCategoryLoop:
 	iny
 	cpy #$04
 	bne DrawCategoryLoop
-	;lda #$10				; 書き込むバイト数(3 + 6 + 3 + 4)
-	;sta <$47
-DrawMusic:
-	ldx $06B6				; BGMフラグ(0:ON/1:OFF)
-	lda #$01
-	sta $0790				; bit6-0 -> 書き込むデータのバイト数bit6-0 -> 書き込むデータのバイト数
-	lda #$20
-	sta $0791				; VRAM書き込みアドレス(high)
-	lda #$5B
-	sta $0792				; VRAM書き込みアドレス(low)
-	lda MusicGfx,x
-	sta $0793				; 書き込む値(byte0のbit6-0で指定した数だけ書き込む)
-
-	lda #$14				; 書き込むバイト数(3 + 6 + 3 + 4 + 3 + 1)
+	lda #$10				; 書き込むバイト数(3 + 6 + 3 + 4)
 	sta <$47
+;DrawMusic:
+;	ldx $06B6				; BGMフラグ(0:ON/1:OFF)
+;	lda #$01
+;	sta $0790				; bit6-0 -> 書き込むデータのバイト数bit6-0 -> 書き込むデータのバイト数
+;	lda #$20
+;	sta $0791				; VRAM書き込みアドレス(high)
+;	lda #$5B
+;	sta $0792				; VRAM書き込みアドレス(low)
+;	lda MusicGfx,x
+;	sta $0793				; 書き込む値(byte0のbit6-0で指定した数だけ書き込む)
+;
+;	lda #$14				; 書き込むバイト数(3 + 6 + 3 + 4 + 3 + 1)
+;	sta <$47
 	rts
 
 BossOrderGfx:
@@ -1001,6 +1001,7 @@ AdvanceAmmoPointer:
 SetClearFlagStart:
 	ldx <$51				; ステージ番号取得
 	ldy #$00
+	sty $0696				; エネルギーバランサー初期化
 AdvanceClearFlagLoop:
 	iny
 	iny
