@@ -3,7 +3,10 @@ This is a practice rom hack for Rockman 6 (Mega Man 6) speedrun.
 It has features such as display frame counter during screen transitions,  
 all stages accessible from stage select, cutscene skips, etc.  
 ![pic01](images/pic01.png) ![pic02](images/pic02.png) ![pic03](images/pic03.png)
-
+  
+## How to play
+Patch "Rockman6_Practice_v1.4.ips" to a vanilla Rockman 6 (J) rom.  
+  
 ## Features
 - Select route (Wind/Flame/Knight first) on the stage select screen by pressing SELECT on Mega Man icon.  
 - Select any stage on the stage select screen by pressing the following buttons.  
